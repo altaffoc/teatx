@@ -20,9 +20,9 @@ SENDER_ADDRESS = "0x0000XXXXXXX"  # Wallet sender
 PRIVATE_KEY = load_private_key()
 
 # Input Token Details
-TOKEN_ADDRESS = Web3.to_checksum_address(input("Enter Token Address: "))
-MIN_AMOUNT = float(input("Enter Min Token Amount: "))
-MAX_AMOUNT = float(input("Enter Max Token Amount: "))
+TOKEN_ADDRESS = Web3.to_checksum_address(input("Enter Smartcontract Address: "))
+MIN_AMOUNT = float(input("Enter Min Send Token Amount: "))
+MAX_AMOUNT = float(input("Enter Max Send Amount: "))
 
 # ERC-20 Token ABI (for transfer function)
 ERC20_ABI = json.loads('[{"constant":false,"inputs":[{"name":"recipient","type":"address"},{"name":"amount","type":"uint256"}],"name":"transfer","outputs":[{"name":"","type":"bool"}],"payable":false,"stateMutability":"nonpayable","type":"function"}]')
